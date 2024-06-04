@@ -33,7 +33,7 @@ class CareerController extends Controller
     public function branding() {
         return view('pages.branding-and-marketing');
     }
-    public function our() {
+    public function locations() {
         return view('pages.our-locations');
     }
     public function five() {

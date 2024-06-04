@@ -3,9 +3,9 @@ use App\Http\Controllers\MenuController;
 $menu = new MenuController;
 $navlinks = $menu->top();
 $footerlinks = $menu->footer();
+$videolinks = $menu->videos();
 $exitlinks = $menu->exit();
 $diffSquares = $menu->differenceSquares();
-$diffFooters = $menu->differenceFooter();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +16,7 @@ $diffFooters = $menu->differenceFooter();
   <title>A New Career for Chief Financial Officers | B2B CFO</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
-
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet">
 <style>
 nav    { background-color: #35434e; }
 header { background-color: #35434e; }
@@ -47,7 +47,15 @@ footer { background-color: #35434e; }
     </div>
   </nav>
 
+  @if (str_contains(Request::url(), 'the-b2b-cfo-difference'))
+    @include('partials._difference')
+  @endif
+
   @yield('content')
+  
+  @if (str_contains(Request::url(), 'the-b2b-cfo-difference'))
+    @include('partials._menuDiffFooter')
+  @endif
 
   <footer style="border: 1px solid #35434e;">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 my-10">
@@ -55,7 +63,8 @@ footer { background-color: #35434e; }
         <img src="https://career.b2bcfo.com/images/b2bcfo-logo-footer.png" class="h-16" alt="B2B CFO Logo" />
       </a>      
       <div class="mr-8">
-        @include('partials._menuFooter')     
+        @include('partials._menuFooter')
+        @include('partials._menuVideos')
         @include('partials._menuExit')
       </div>
     </div>

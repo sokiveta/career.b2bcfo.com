@@ -101,35 +101,6 @@
       </form>
 
     </div>
-    <p>
-      <br />
-    Homepage: <br />
-      submitYourResume<br />
-      thank-you page<br />
-<br />
-    Calendar:<br />
-      Josh<br />
-      Denise<br />
-<br />
-    the-b2b-cfo-difference<br />
-      the-b2b-cfo-difference/people-and-thought-leadership<br />
-      the-b2b-cfo-difference/training-and-professional-development<br />
-      the-b2b-cfo-difference/higher-fees-and-the-large-check<br />
-      the-b2b-cfo-difference/support-resources-and-tools<br />
-      the-b2b-cfo-difference/career-change<br />
-      the-b2b-cfo-difference/branding-and-marketing<br />
-      the-b2b-cfo-difference/our-locations<br />
-<br />
-    5-needs-of-cfos (video)<br />
-<br />
-    million-dollar-video (video)<br />
-<br />
-    our-why (video)<br />
-<br />
-    non-disclosure-agreement<br />
-<br />
-    operating-agreement (requires login)
-    </p>
 
   </div>
 

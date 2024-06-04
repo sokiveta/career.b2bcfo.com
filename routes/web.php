@@ -24,6 +24,6 @@ Route::get('/our-why', [CareerController::class, 'why']);
 Route::get('/non-disclosure-agreement', [CareerController::class, 'nda']);
 Route::get('/operating-agrement', [AccessController::class, 'oa']);
 
-Route::get('/calendar', [CalendarController::class, 'josh']);
-Route::get('/calendar/josh', [CalendarController::class, 'josh']);
+Route::get('/calendar', [CalendarController::class, 'denise']);
 Route::get('/calendar/denise', [CalendarController::class, 'denise']);
+// Route::get('/calendar/josh', [CalendarController::class, 'josh']);
